@@ -1,0 +1,16 @@
+{
+  "name": "http-flood",
+  "version": "1.0.0",
+  "description": "Flood the http",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "soshimee",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.2.0"
+  }
+}
