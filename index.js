@@ -1,10 +1,8 @@
 import fs from "fs";
-import fetch from "node-fetch";
+import { Worker } from "worker_threads";
 
 const config = JSON.parse(fs.readFileSync("config.json"));
 
 for (let i = 0; i < config.threads; i++) {
-	setInterval(async () => {
-		fetch(config.url).catch(() => {});
-	}, 0);
+	new Worker("./worker.js");
 }
